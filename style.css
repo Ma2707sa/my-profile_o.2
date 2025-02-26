@@ -1,0 +1,373 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  position: relative;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 20px;
+  cursor: pointer;
+  animation: moveLogo 1s infinite alternate ease-in-out;
+}
+
+@keyframes moveLogo {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.logo h4 span {
+  transition: color 0.3s;
+}
+
+.logo:hover span.char1 {
+  color: #2980b9;
+}
+.logo:hover span.char2 {
+  color: #c0392b;
+}
+.logo:hover span.char3 {
+  color: #27ae60;
+}
+.logo:hover span.char4 {
+  color: #8e44ad;
+}
+.logo:hover span.char5 {
+  color: #d35400;
+}
+.logo:hover span.char6 {
+  color: #16a085;
+}
+.logo:hover span.char7 {
+  color: #f39c12;
+}
+.logo:hover span.char8 {
+  color: #34495e;
+}
+.logo:hover span.char9 {
+  color: #ecf0f1;
+}
+.logo:hover span.char10 {
+  color: #e67e22;
+}
+.logo:hover span.char11 {
+  color: #3498db;
+}
+.logo:hover span.char12 {
+  color: #e74c3c;
+}
+.logo:hover span.char13 {
+  color: #2ecc71;
+}
+.logo:hover span.char14 {
+  color: #9b59b6;
+}
+.logo:hover span.char15 {
+  color: #1abc9c;
+}
+.logo:hover span.char16 {
+  color: #f1c40f;
+}
+.logo:hover span.char17 {
+  color: #95a5a6;
+}
+.logo:hover span.char18 {
+  color: #bdc3c7;
+}
+.logo:hover span.char19 {
+  color: #7f8c8d;
+}
+.logo:hover span.char20 {
+  color: #2c3e50;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background: #000;
+  color: #fff;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #f1c40f;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #f1c40f;
+  display: block;
+  margin: auto;
+  transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(imgs/ELKHWAS_3.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: #e74c3c;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2980b9;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  color: #fff;
+  background-color: gold;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 1000px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+  animation: moveLogo 1s infinite alternate ease-in-out;
+}
+
+.main-btn:hover {
+  background-color: #f1c40f;
+  transform: scale(1.1);
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #f1c40f;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* عرض الكروت بشكل أفقي */
+  flex-wrap: wrap; /* السماح بتغليف الكروت إذا كانت الشاشة صغيرة */
+  gap: 20px; /* مسافة بين الكروت */
+}
+
+.card {
+  background-color: #f1c40f;
+  width: 21.25em;
+  box-shadow: gold;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  transition: 0.7s ease;
+  min-height: 14em;
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #2980b9;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.projects {
+  background-color: #2c3e50;
+  /* display: flex;
+  justify-content: center; */
+}
+.projects .content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row; /* عرض الكروت بشكل أفقي */
+  flex-wrap: wrap; /* السماح بتغليف الكروت إذا كانت الشاشة صغيرة */
+  gap: 20px; /* مسافة بين الكروت */
+  justify-content: center; /* توسيط الكروت */
+}
+
+.project-card {
+  background-color: #ecf0f1;
+  border: 1px solid #ecf0f1;
+  min-height: 10em; /* تعديل الارتفاع */
+  width: 15em; /* تعديل العرض */
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-info {
+  padding: 1em;
+}
+
+.project-category {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.more-details {
+  text-decoration: none;
+  color: #2980b9;
+}
+
+.more-details:hover {
+  color: #27ae60;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap; /* يتيح للكروت الالتفاف إلى الصف التالي إذا لم يكن هناك مساحة كافية */
+  justify-content: center; /* يضمن أن الكروت مرتبة بشكل مركزي */
+  gap: 20px; /* مسافة بين الكروت */
+}
+.profile-photo {
+  width: 2.7rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background: #000;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: auto; /* يجعل القائمة تنتقل إلى اليمين */
+}
+
+.profile-photo {
+  width: 2.7rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin-right: 20px; /* إضافة مساحة بين الصورة والعناصر الأخرى */
+}
+
+img {
+  display: block;
+  width: 100%;
+}
